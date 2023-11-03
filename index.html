@@ -1,61 +1,38 @@
-.spiralContainer {
-  border-radius: 50%;
-  width:200px;
-  height:200px;
-  overflow:hidden;
-  margin:20px;
-  
-  -webkit-animation: spin 3s linear 0s infinite reverse;
-  -moz-animation: spin 3s linear 0s infinite reverse;  
-  -ms-animation: spin 3s linear 0s infinite reverse;
-  -o-animation: spin 3s linear 0s infinite reverse;
-  animation: spin 3s linear 0s infinite reverse;
-  
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -ms-animation-play-state: paused;
-  -o-animation-play-state: paused;  
-  animation-play-state: paused;
-}
-.spiral {
-  width:200px;
-  height:200px;
-  border-radius: 50%;
-  background-image: url(http://farm7.staticflickr.com/6115/6319704650_0a2bd0dcef_o.jpg);
-  background-repeat:no-repeat;
-  background-position:50% 50%;
-  
-  
-  -webkit-animation: spin 6s linear 0s infinite normal;
-  -moz-animation: spin 6s linear 0s infinite normal;
-  -ms-animation: spin 6s linear 0s infinite normal;
-  -o-animation: spin 6s linear 0s infinite normal;
-  animation: spin 6s linear 0s infinite normal;
-}
-.spiralContainer:hover {
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -ms-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-}
-@keyframes spin {
-  0% { transform: rotate(360deg); }
-  100% { transform: rotate(0deg); }
-}
-@-webkit-keyframes spin {
-  0% {-webkit-transform: rotate(360deg); }
-  100% { -webkit-transform: rotate(0deg); }
-}
-@-ms-keyframes spin {
-  0% {-ms-transform: rotate(360deg); }
-  100% { -ms-transform: rotate(0deg); }
-}
-@-moz-keyframes spin {
-  0% { -moz-transform: rotate(360deg); }
-  100% { -moz-transform: rotate(0deg); }
-}
-@-o-keyframes spin {
-  0% { -o-transform: rotate(360deg); }
-  100% { -o-transform: rotate(0deg); }
-}
+<!-- 
+🎬 Video playlist UI Design like Skillshare With Vanilla JavaScript
+👨🏻‍⚕️ By: Coding Design
+
+You can do whatever you want with the code. However if you love my content, you can subscribed my YouTube Channel
+🌎link: www.youtube.com/codingdesign
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Playlist UI Design Like Udemy | SkillShare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="main-video">
+            <video src="videos/manipulate text background.mp4" controls autoplay muted></video>
+            <h3 class="title">Title of the playing Video.</h3>
+        </section>
+
+        <section class="video-playlist">
+            <h3 class="title">Title of Video Playlist</h3>
+            <p>10 lessions &nbsp; . &nbsp; 50m 48s</p>
+            <div class="videos">
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
